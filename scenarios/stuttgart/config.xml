@@ -12,7 +12,7 @@
 	</module>
 
 	<module name="plans">
-		<param name="inputPlansFile" value="plans100.xml" />
+		<param name="inputPlansFile" value="TestAgent.xml" />
 	</module>
 
 	<module name="controler">
@@ -23,8 +23,8 @@
 
 	<module name="qsim">
 		<!-- "start/endTime" of MobSim (00:00:00 == take earliest activity time/ run as long as active vehicles exist) -->
-		<param name="startTime" value="00:00:00" />
-		<param name="endTime" value="00:00:00" />
+		<param name="startTime" value="06:50:00" />
+		<param name="endTime" value="10:00:00" />
 	
 		<param name = "snapshotperiod"	value = "00:00:00"/> <!-- 00:00:00 means NO snapshot writing -->
 	</module>
@@ -38,12 +38,12 @@
 		<param name="performing" value="+6" />
 		<param name="waiting" value="-0" />
 		<parameterset type="activityParams" >
-			<param name="activityType"            value="h" /> <!-- home -->
+			<param name="activityType"            value="home" /> <!-- home -->
 			<param name="priority"        value="1" />
 			<param name="typicalDuration" value="12:00:00" />
 		</parameterset>
 		<parameterset type="activityParams" >
-			<param name="activityType"            value="w" /> <!-- work -->
+			<param name="activityType"            value="work" /> <!-- work -->
 			<param name="priority"        value="1" />
 			<param name="typicalDuration" value="08:00:00" />
 			<param name="openingTime"     value="07:00:00" />
@@ -56,10 +56,10 @@
 	<module name="strategy">
 		<param name="maxAgentPlanMemorySize" value="5" /> <!-- 0 means unlimited -->
 
-		<param name="ModuleProbability_1" value="0.9" />
+		<param name="ModuleProbability_1" value="1" />
 		<param name="Module_1" value="BestScore" />
 
-		<param name="ModuleProbability_2" value="0.1" />
+		<param name="ModuleProbability_2" value="0" />
 		<param name="Module_2" value="ReRoute" />
 	</module>
 

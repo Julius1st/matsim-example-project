@@ -82,6 +82,20 @@
 <!--			jan'21-->
 		</dependency>
 
+
+			<!-- Unnecessarily added? -->
+			<dependency>
+				<groupId>org.apache.logging.log4j</groupId>
+				<artifactId>log4j-api</artifactId>
+				<version>2.23.1</version>
+			</dependency>
+			<dependency>
+				<groupId>org.apache.logging.log4j</groupId>
+				<artifactId>log4j-core</artifactId>
+				<version>2.23.1</version>
+			</dependency>
+
+
 		<!--some contribs:-->
 		<dependency>
 			<groupId>org.matsim.contrib</groupId>
